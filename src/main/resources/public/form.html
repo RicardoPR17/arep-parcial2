@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Service</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Factors</h1>
+    <form action="/hello">
+      <label for="value">Number:</label><br />
+      <input type="text" id="value" name="value" placeholder="Type a positive number..." /><br />
+      <input type="button" value="Search factors" onclick="factors()" />
+    </form>
+    <div id="getfactors"></div>
+
+    <h1>Primes</h1>
+    <form action="/hello">
+      <label for="val_prime">Number:</label><br />
+      <input type="text" id="val_prime" name="val_prime" placeholder="Type a positive number..." /><br />
+      <input type="button" value="Check primes" onclick="primes()" />
+    </form>
+    <div id="getprimes"></div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
