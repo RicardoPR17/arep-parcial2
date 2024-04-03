@@ -51,27 +51,27 @@ Para la ejecución, se usan los comandos de ejecución para Linux o el adecuado 
 Para las pruebas en local, a continuación se muestra cómo se inician los servicios desde línea de comandos:
 + MathService
 
-![Math 1](math1.png)
-![Math 2](math2.png)
+![Math 1](<Imágenes README/math1.png>)
+![Math 2](<Imágenes README/math2.png>)
 + ProxyService con parámetros para los MathService
 
-![proxy](proxy.png)
+![proxy](<Imágenes README/proxy.png>)
 
 Al acceder al servicio por la ruta indicada, vemos el siguiente formulario:
 
-![form](form.png)
+![form](<Imágenes README/form.png>)
 
 Si enviamos un número, como el 25, para los factores veremos lo siguiente
 
-![factores](facts.png)
+![factores](<Imágenes README/facts.png>)
 
 Y si enviamos el 47 para ver los primos hasta ese número, veremos lo siguiente
 
-![primos](primos.png)
+![primos](<Imágenes README/primos.png>)
 
 Finalmente, si enviamos una nueva petición (primos hasta 99) y vemos los logs del proxy se verá como cambia entre servidores para dar respuesta a las peticiones
 
-![logs](logs.png)
+![logs](<Imágenes README/logs.png>)
 
 _El cambio se identifica por los puertos que se usan._
 
