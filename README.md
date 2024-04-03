@@ -75,4 +75,4 @@ Finalmente, si enviamos una nueva petición (primos hasta 99) y vemos los logs d
 
 El cambio se identifica por los puertos que se usan.
 
-A continuación se presenta el vídeo para evidenciar el funcionamiento del servicio en AWS: 
+A continuación se presenta el vídeo para evidenciar el funcionamiento del servicio en AWS: https://youtu.be/ihMoYm4ucsI
