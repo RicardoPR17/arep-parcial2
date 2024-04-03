@@ -2,13 +2,13 @@
 ## AREP - 1
 ## *Hecho por Ricardo Pulido Renteria*
 
-#### *Requisitos*
+### **_Requisitos_**
 Para ejecutar este proyecto se requiere de:
 + Java 17 o superior
 + Maven 3.9 o superior
 + Git
 
-#### *Descarga y preparación del proyecto*
+### **_Descarga y preparación del proyecto_**
 Para descargar el proyecto, desde la línea de comandos vamos a ejecutar el siguiente comando:
 ```bash
 git clone https://github.com/RicardoPR17/arep-parcial2.git
@@ -20,7 +20,7 @@ cd arep-parcial2/
 mvn clean install
 ```
 
-#### *Ejecución*
+### **_Ejecución_**
 
 Esta se realizará desde la línea de comandos. Primero, debemos ejecutar las instancias que necesitemos o deseemos del MathServices, el comando para ello es el siguiente:
 + Para Linux: `java -cp "target/classes:target/dependency/*" com.edu.escuelaing.arep.parcial2.MathServices`
@@ -36,9 +36,9 @@ Luego, ejecutamos el ProxyService pasándole por parámetros las url junto al pu
 java -cp "target/classes;target/dependency/*" com.edu.escuelaing.arep.parcial2.ProxyService localhost:5001 192.168.5.113:5001
 ```
 
-Esto, nos iniciaría el servicio al que podemos acceder por http://localhost:4567/form.hmtl
+Esto, nos iniciaría el servicio al que podemos acceder por http://localhost:4567/form.html
 
-#### *Ejecución en EC2*
+### **_Ejecución en EC2_**
 
 **Opcional:** Por comodidad, se pueden crear las instancias dentro del mismo grupo de seguridad. Debemos abrir los puertos 4567 y 5001 del grupo de seguridad. El primero es para el servicio de Proxy y el segundo para las instancias MathService.
 
@@ -46,7 +46,7 @@ Para ejecutar este proyecto en EC2, debemos instalar Java, Maven y Git usando el
 
 Para la ejecución, se usan los comandos de ejecución para Linux o el adecuado según el sistema operativo de la instancia. Primero se debe iniciar la ejecución de los MathService y copiamos las IPs privadas de estos. Luego, al ejecutar el ProxyService le vamos a pasar las IPs con el puerto 5001.
 
-#### *Pruebas*
+#### **_Pruebas_**
 
 Para las pruebas en local, a continuación se muestra cómo se inician los servicios desde línea de comandos:
 + MathService
@@ -73,6 +73,6 @@ Finalmente, si enviamos una nueva petición (primos hasta 99) y vemos los logs d
 
 ![logs](logs.png)
 
-El cambio se identifica por los puertos que se usan.
+_El cambio se identifica por los puertos que se usan._
 
 A continuación se presenta el vídeo para evidenciar el funcionamiento del servicio en AWS: https://youtu.be/ihMoYm4ucsI
